@@ -4,19 +4,21 @@ spring:
     - dev
 
 ---
+server:
+  port: 3366
 spring:
      profiles: dev
      application:
        name: ms-cloud-config-dev
 
-server:
-  port: 3366
+
 
 ---
+server:
+  port: 3355
 spring:
   profiles: test
   application:
     name: ms-cloud-config-test
 
-server:
-  port: 3355
+
