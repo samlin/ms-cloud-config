@@ -6,13 +6,17 @@ spring:
 ---
 spring:
      profiles: dev
-     port: 3366
      application:
        name: ms-cloud-config-dev
+
+server:
+  port: 3366
 
 ---
 spring:
   profiles: test
-  port: 3355
   application:
     name: ms-cloud-config-test
+
+server:
+  port: 3355
